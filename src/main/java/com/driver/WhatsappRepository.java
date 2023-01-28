@@ -90,11 +90,11 @@ public class WhatsappRepository {
                         return "SUCCESS";
                     }
                 }
-                throw new Exception("User is not available in the group");
+                throw new Exception("User is not a participant");
             }
-            throw new Exception("Approver doesn't have the rights");
+            throw new Exception("Approver does not have rights");
         }
-        throw new Exception("Group doesn't exist");
+        throw new Exception("Group does not exist");
     }
     public int createMessage(String message) {
         messageId += 1;
